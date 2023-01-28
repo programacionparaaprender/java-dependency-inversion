@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>papers.Main</OriginalElement>
+  <nodes>
+    <node x="319.0" y="116.5">papers.infra.persistence.PaperFakeRepository</node>
+    <node x="557.0" y="116.5">papers.infra.persistence.PaperCSVRepository</node>
+    <node x="66.0" y="256.0">papers.Main</node>
+    <node x="792.0" y="116.5">papers.infra.persistence.PaperMySQLRepository</node>
+    <node x="93.99537037037038" y="0.0">papers.domain.abstractions.PaperRepository</node>
+    <node x="0.0" y="105.0">papers.app.PaperApplication</node>
+    <node x="1050.0" y="116.5">papers.infra.persistence.PaperSQLServerRepository</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="papers.infra.persistence.PaperFakeRepository" target="papers.domain.abstractions.PaperRepository" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="428.0" y="80.0" />
+      <point x="184.995" y="80.0" />
+      <point x="-3.7037037037634946E-4" y="27.5" />
+    </edge>
+    <edge source="papers.Main" target="papers.app.PaperApplication" relationship="CREATE">
+      <point x="0.0" y="-39.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="papers.app.PaperApplication" target="papers.domain.abstractions.PaperRepository" relationship="TO_ONE">
+      <point x="15.0" y="-50.5" />
+      <point x="-20.49537037037038" y="27.5" />
+    </edge>
+    <edge source="papers.infra.persistence.PaperCSVRepository" target="papers.domain.abstractions.PaperRepository" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="664.5" y="80.0" />
+      <point x="184.995" y="80.0" />
+      <point x="-3.7037037037634946E-4" y="27.5" />
+    </edge>
+    <edge source="papers.app.PaperApplication" target="papers.domain.abstractions.PaperRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-50.5" />
+      <point x="-35.49537037037038" y="27.5" />
+    </edge>
+    <edge source="papers.infra.persistence.PaperSQLServerRepository" target="papers.domain.abstractions.PaperRepository" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="1182.5" y="80.0" />
+      <point x="184.995" y="80.0" />
+      <point x="-3.7037037037634946E-4" y="27.5" />
+    </edge>
+    <edge source="papers.infra.persistence.PaperMySQLRepository" target="papers.domain.abstractions.PaperRepository" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="911.0" y="80.0" />
+      <point x="184.995" y="80.0" />
+      <point x="-3.7037037037634946E-4" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9752808988764045" showDependencies="true" x="657.5" y="167.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
